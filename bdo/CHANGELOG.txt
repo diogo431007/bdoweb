@@ -1,0 +1,91 @@
+VERSÃO 2.0
+
+VERSÃO 1.9
+11/11/2016 - Aumentar o número de dígitos do campo telefone celular
+
+VERSÃO 1.8
+16/05/2016 - Adicionando cron que baixa as vagas após 15, 30 ou 60 dias dependendo da quantidade de vagas.
+
+VERSÃO 1.7
+12/04/2016 - [BUG] erro de caracteres especias nos campos cidade e bairro na tela de cadastro de currículo e de empresa
+11/04/2016 - Novo relatório detalhado de deficientes por empresa
+11/04/2016 - Novo relatório detalhado de deficientes
+
+VERSÃO 1.6
+04/04/2016 - Nova coluna de deficientes na tabela de admissões no interno.
+04/04/2016 - Nova coluna de deficientes no relatório de admissões.
+
+#################################################################################################
+
+#VERSÃO 1.5
+#06/01/2016
+- ID: 32585 - Vagas em destaque devem ser rotativas.
+
+
+#################################################################################################
+
+#VERSÃO 1.4
+
+#21/12/2015
+- ID: 32545 - [BUG] Erro no editar vaga, aparece tela em branco.
+
+#################################################################################################
+
+#VERSÃO 1.3
+
+#16/09/2015
+- ID: 23964 - Gerar relatório de empresas cadastradas.
+- ID: 25165 - Gerar relatório de empresas cadastradas com vagas.
+- ID: 25166 - Gerar relatório de vagas por período.
+
+#17/09/2015
+- ID: 25155 - Gerar relatório da pesquisa por empresas.
+
+#18/09/2015
+- ID: 25167 - Corrigir problema nos pdfs dos relatórios.
+
+#################################################################################################
+
+#VERSÃO 1.2
+#31/08/2015
+- ID: 21026 - Corrigir imprecisão nos resultados do relatório de período.
+
+#################################################################################################
+
+#VERSÃO 1.1
+#17/08/2015
+- ID: 19483 - Ajustar contador de vagas na página principal.
+
+#################################################################################################
+
+#VERSÃO 1.0
+
+#08/04/2015
+- ID: 11520 - Arrumar post no retorno da validação no cadastro de novas vagas.
+- ID: 11522 - Retirar mensagem e alert quando clica no botão de acessar como empresa no interno.
+
+#09/04/2015
+- ID: 11551 - Modificado o Layout do sair do usuário no interno, candidato e empresa.
+- ID: 11552 - Registro de logs do usuário no interno quando acessa como empresa.
+
+#16/04/2015
+- ID: 11528 - Arrumar a paginação na busca por candidatos no interno.
+
+#17/04/2015
+- ID: 11663 - Resetar senha do candidato pelo interno na busca.
+
+#24/04/2015
+- ID: 11052 - No cadastro do candidato adicionar campo PIS/PASEP não obrigatório.
+- ID: 11666 - Envio de email individual para candidato pelo interno.
+
+#04/05/2015
+- ID: 11776 - Melhora no entendimento e layout da aba Profissões.
+
+#08/05/2015
+- ID: 11051 - No cadastro de candidato, ao selecionar Canoas, mostrar os bairros de Canoas para seleção.
+- ID: 11049 - Ao solicitar nova senha, abrir um alert com o email do candidato.
+- ID: 11779 - Filtrar as profissões de maneira mais fácil e rápida.
+- ID: 11780 - Na aba cargos pretendidos do candidato, as prifissões que ele seleciona caso exister vagas cadastradas para ela, irá mostrar a quantidade de vagas.
+- ID: 12055 - Testes Funcionais.
+
+#################################################################################################

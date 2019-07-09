@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<project name="bancodeoportunidades" default="zip" basedir=".">
+        <property environment="env"/>
+        <property file="./build.properties" />
+	
+	<property name="project-name" value="${ant.project.name}" />
+	<property name="folder-to-zip" value="bin" />
+	
+	<target name="phpunit" >
+        	<exec executable="phpunit" failonerror="true">
+                        <arg line="--log-junit results/phpunit/phpunit.xml
+	                           --coverage-clover 'results/coverage/coverage.xml'" />
+                </exec>
+        </target>
+        
+        <target name="env-clean" depends="phpunit">
+            <delete file="DefineCredenciais.php" />
+        </target>
+                       
+        <target name="env-create" depends="env-clean">
+            <echo>Creating DefineCredenciais.php </echo>
+            <exec executable="/bin/bash" output="DefineCredenciais.php" failonerror="true">
+                <arg value="generateEnvironment.sh" />                
+                <arg value="${db-server}" />
+                <arg value="${db-banco}" />
+                <arg value="${db-user}" />
+                <arg value="${db-password}" />                
+            </exec>
+        </target>
+        
+        <target name="clean" depends="env-create">
+		<delete file="bin/${project-name}.zip" />
+		<mkdir dir="${folder-to-zip}"/>
+	</target>
+
+	<target name="zip" depends="clean">
+		<defaultexcludes default="true"/>
+		<zip destfile="${folder-to-zip}/${project-name}.zip" basedir="." excludes="CHANGE*.txt, nbproject/, build.xml, results/, bin/, tests/, vendor/, phpunit.xml" />
+	</target>
+
+</project>
+
+
+
+

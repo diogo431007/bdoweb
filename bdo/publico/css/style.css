@@ -1,0 +1,1612 @@
+/*############################## BODY ##############################*/
+html,body{border:0;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	outline:0;
+	vertical-align:baseline;
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:#e8e5e5;
+  background-position: center top;
+	background-repeat: no-repeat;
+	font-family: Arial,sans-serif;
+    }
+
+fieldset{
+    border-color: #F66401;
+    border-style: solid;
+}
+
+#corpo{
+	margin:auto;
+	width:970px;
+        height: auto;
+}
+#conteudo{
+        position: relative;
+	float: left;
+	width: 970px;
+        height: auto;
+	margin: 0;
+	background-color: #fff;
+	color: #666666;
+}
+.subtitulo{
+    font-family: nexa_lightregular;
+    color: #EE7228;
+    font-size: 35px;
+    padding: 15px 0px 0px 10px;
+    margin: 0;
+}
+.titulo{
+    font-family: nexa_lightregular;
+    color: #EE7228;
+    margin: 0;
+    font-size: 35px;
+}
+
+#acesso{
+    background-image: url("../../../Utilidades/Imagens/bancodeoportunidades/novo_login.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    padding: 150px 0 0 40px;
+    width: 590px;
+
+}
+
+#user_load, #prof_load, #def_load, #perf_load, #cand_load {
+	padding: 5px;
+	display: none;
+
+}
+
+#user_ok, #prof_ok, #def_ok, #perf_ok, #cand_ok {
+	padding: 5px;
+	display: none;
+	color: #006600;
+	font-weight: bold;
+        background-color: #99ff99;
+        border-color: #006600;
+        border-style: solid;
+        border-width: 1px;
+}
+#user_error, #prof_error, #def_error, #perf_error, #cand_error {
+	padding: 5px;
+	display: none;
+	color: #900;
+	font-weight: bold;
+	background-color: #FFCCCC;
+        border-color: #990000;
+        border-style: solid;
+        border-width: 1px;
+}
+
+
+
+
+
+#log_error{
+    background-color: #ffff99;
+    border-style: solid;
+    border-width: 1px;
+    color: #ff0000;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 11px;
+    width: 335px;
+
+}
+#log_aux{
+  width: 335px;
+  height: 35px;
+  margin-bottom: 5px;
+
+}
+#indexError{
+    background-color: #BE9C5E;
+    border-style: solid;
+    border-width: 1px;
+    color: #712E67;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 11px;
+    width: 335px;
+}
+/*############################## HEADER ##############################*/
+#header{
+	width:970px;
+	height: 110px;
+	float:left;
+	background-image: url("../../../Utilidades/Imagens/bancodeoportunidades/cabecalho-background.png");
+	}
+
+#logo{
+   margin: -95px 10px 10px 0px;
+}
+#logo2{
+   margin: 34px 745px 10px;
+}
+/*############################## MENU ##############################*/
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    float: left;
+    list-style:none;
+    width:970px;
+    height: 39px;
+    background-image: url("../../../Utilidades/Imagens/bancodeoportunidades/menu-background.png");
+    color: #666666;
+    text-align: center;
+    text-decoration: none;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+#menu ul li {
+	display: inline;
+}
+#menu ul li a {
+    padding: 2px 10px;
+    float:left;
+    color: #333;
+    text-decoration: none;
+    border-right: 1px solid #E4E2CD;
+}
+#menu ul li a:hover {
+    background-image: url("../../../Utilidades/Imagens/bancodeoportunidades/menu-background-a.png");
+    color: #FFF;
+    height: 35px;
+}
+
+/*############################## FOOTER ##############################*/
+
+#footer{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+}
+
+#rodape {
+    position: relative;
+    height: 85px;
+    width: 970px;
+    margin: 0 auto;
+    background: #F6F6EF;
+    border-top: solid 3px #E4E2CD;
+}
+
+#assinatura{
+    position: relative;
+    float: left;
+    margin: 20px 10px;
+    font-size: 14px;
+    color: #777;
+    font-weight: bold;
+}
+
+#rodape img{
+    position: relative;
+    float: right;
+    margin: 10px 10px;
+}
+
+/*############################## PESQUISA ##############################*/
+
+#resultados{
+  border:0px solid #CCCCCC;
+  margin: auto;
+  width: 842px;
+}
+
+#resultadoPerfil{
+  border:0px solid #CCCCCC;
+  margin: auto;
+  width: 842px;
+}
+
+#resultadoProfissao, #resultadoDeficiencia{
+  border:0px solid #CCCCCC;
+  margin: auto;
+  width: 842px;
+}
+
+/*############################## CLASS ##############################*/
+.msg{
+    color: #F00;
+    font-weight: bold;
+}
+
+.style1 {
+   color: #FF0000;
+   font-size: 13px;
+   font-family: Helvetica, Arial, sans-serif;
+}
+.style3 {
+    color: #ffffff; font-size: x-small;
+}
+
+
+.botao{
+	border: 1px solid #666666;
+	height: 30px;
+	/*background-image: url("../imagens/menu-background.png");*/
+	color: white;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background-color: #9ED0CA;
+}
+
+.botao:hover{
+    background-image: url("../../../Utilidades/Imagens/bancodeoportunidades/menu-background-a.png");
+    color: #FFF;
+    height: 30px;
+    background-position: center;
+}
+.botao_pesquisa{
+	border: 0px;
+	height: 43px;
+	background-image: url("../../../Utilidades/Imagens/bancodeoportunidades/backBotaoPesquisa.png");
+	color: #666666;
+    text-align: center;
+    cursor: pointer;
+    width: 61px;
+}
+.botao_pesquisa:hover{
+    background-image: url("../../../Utilidades/Imagens/bancodeoportunidades/backBotaoPesquisa-a.png");
+    color: #FFF;
+    height: 43px;
+    background-position: center;
+}
+.campo{
+    border: 1px solid #666666;
+    padding: 8px;
+    font-size: 12px;
+    color: #666666;
+}
+.campo_erro{
+    border: 1px solid #C03;
+    padding: 8px;
+    font-size: 12px;
+    color: #666666;
+}
+.campo_pesquisa{
+    border: 0px;
+    padding: 5px;
+    font-size: 16px;
+    color: #666666;
+    height: 43px;
+    width: 335px;
+}
+.tabela{
+  color: #666666;
+  width: 739px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.tabela_cand{
+  color: #666666;
+  width: 900px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.tabela_empresa{
+  color: #666666;
+  width: 700px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.tabela_login{
+  color: #666666;
+  width: 500px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.tabela_pesquisa{
+  color: #666666;
+  border: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  float: right;
+  margin: 80px 122px 10px 10px;
+}
+.legend{
+  font-size: 12px;
+  font-weight: bold;
+  color: #97989A;
+}
+.pesquisa{
+    height: 200px;
+    width: 100%;
+    background-image: url("../../../Utilidades/Imagens/bancodeoportunidades/backPesquisa.png");
+    background-repeat: no-repeat;
+
+}
+.body_login{
+ background-image: url("../../../Utilidades/Imagens/bancodeoportunidades/bg_login.png");
+ background-repeat: repeat;
+ background-color: #fff;
+}
+.link {
+   color: #666;
+   font-size: x-small;
+   font-weight: bold;
+}
+.link:hover {
+   color: red;
+   font-size: x-small;
+   font-weight: bold;
+}
+.texto{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  -moz-text-shadow: 1px 1px 1px #666666;
+  -webkit-text-shadow: 1px 1px 1px #666666;
+  /*text-shadow: 1px 1px 1px #666666;*/
+
+}
+.busca{
+  float: left;
+  text-align: center;
+   font-size: 12px;
+  font-weight: bold;
+  margin: 75px 0px 0px 250px;
+}
+
+.tabelapesq{
+  float: left;
+  margin: 2px 1px;
+  color: #fff;
+  text-align: center;
+  background-color: #EE7228;
+}
+.headertabela, .linhatabela{
+  display: table;
+  margin: 1px 1px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.linha{
+    float: left;
+    margin: 1px 1px;
+    background-color: #CCC;
+    height: 20px;
+    position: relative;
+}
+.linha:hover{
+  background-color: #fff;
+}
+
+.id{
+   width: 30px;
+   text-align: center;
+}
+.descricao, .nome{
+   width: 275px;
+}
+
+.descricao_perf{
+   width: 845px;
+}
+.nome_user{
+    width: 305px;
+}
+.profissao_prof{
+   width: 895px;
+}
+.deficiencia, .profissao{
+   width: 285px;
+}
+.deficiencia_def{
+   width: 895px;
+}
+.secretaria{
+    width: 895px;
+}
+.email{
+   width: 280px;
+}
+.area_subarea{
+    width: 280px;
+}
+
+.telefone{
+  width: 100px;
+
+}
+.perfil{
+  width: 150px;
+
+}
+.perfil_user{
+  width: 230px;
+}
+.edita{
+  width: 50px;
+  text-align: center;
+}
+.deleta{
+  width: 50px;
+  text-align: center;
+}
+.controle{
+  width: 50px;
+  text-align: center;
+}
+
+.checkPosicao{
+    float: left;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+}
+.checkCadastro{
+     margin: 5px 5px 5px 25px;
+}
+.checkTitulo{
+
+
+}
+.checkProfissao{
+    position: relative;
+    float: left;
+    margin: 5px 5px 5px 25px;
+    width: 350px;
+}
+.checkProfissaoOutro{
+    position: relative;
+    float: left;
+    margin: 5px 5px 5px 25px;
+    width: 600px;
+}
+
+.sessao_nova_vaga{
+    z-index: 1;
+    text-decoration: none;
+    border: 1px solid #EE7228;
+    font-size: 12px;
+    color: #666666;
+    float: right;
+    position: absolute;
+    margin: 200px 10px 10px 810px;
+    width: 155px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.sessao{
+    z-index: 1;
+    text-decoration: none;
+    border: 1px solid #EE7228;
+    font-size: 12px;
+    color: #666666;
+    float: right;
+    position: absolute;
+    margin: 151px 10px 10px 565px;
+    width: 400px;
+    text-align: center;
+    padding: 5px 0;
+}
+.msgL{
+    z-index: 1;
+    text-decoration: none;
+    border: 1px solid #c00;
+    font-size: 12px;
+    color: #f00;
+    float: right;
+    position: absolute;
+    margin: 185px 10px 10px 565px;
+    width: 400px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.logout {
+   color: #666;
+   font-size: 12px;
+   font-weight: bold;
+   text-decoration: none;
+}
+.logout:hover {
+   color: #EE7228;
+   font-size: 12px;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+
+/* trocaSenha */
+
+.trocaSenha form table tr td{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    /*-moz-text-shadow: 1px 1px 1px #666666;
+    -webkit-text-shadow: 1px 1px 1px #666666;
+    text-shadow: 1px 1px 1px #666666;*/
+}
+
+/* paginacao */
+.paginacao{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 950px;
+    height: 30px;
+    background: #EE7228;
+    text-align: center;
+    color: #FFF;
+}
+
+.paginacao span{
+    position: relative;
+    height: 20px;
+    top: 5px;
+}
+
+.paginacao a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.paginacao a:hover{
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.page{
+    text-decoration: none;
+    color: #666;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.relatorio_filtro{
+    position: relative;
+    width: 100%;
+}
+
+.filtro_label{
+   color: #666;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+.tabela_relatorio{
+    width: 100%;
+}
+
+.largura{
+    width: 230px;
+}
+.largura_login{
+    width: 220px;
+}
+.relatorio_resultado{
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.tabela_resultado{
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color: #EE7228;
+    height: 25px;
+}
+
+.genero{
+    width: 65px;
+}
+
+.linha_relatorio{
+    font-size: 12px;
+    color: #666;
+    background: #ccc;
+    font-weight: bold;
+    height: 20px;
+}
+
+.select{
+    width: 200px;
+}
+
+
+/*
+############
+*/
+
+.suggestionsBox {
+    position: relative;
+    left: 5px;
+    margin: 10px 0px 0px 0px;
+    width: 630px;
+    background-color: #333;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.suggestionList {
+    margin: 0px;
+    padding: 0px;
+}
+
+.suggestionList li {
+    margin: 0px 0px 3px 0px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.suggestionList li:hover {
+    background-color: #EE7228;
+}
+
+#inputString{
+    width: 600px;
+}
+.table_formacao_cab{
+    background-color: #EE7228;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+}
+.table_formacao_row{
+    background-color: #fff;
+    color: #666;
+    font-size: 12px;
+    height: 25px;
+}
+.deletar{
+    padding: 10px 15px;
+}
+.tab_form table{
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+}
+.tab_adiciona table{
+    background: #EE7228;
+}
+.btn_editar{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 12px;
+    height: 20px;
+    background: url('../../../Utilidades/Imagens/bancodeoportunidades/edita.png') no-repeat center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#paginacao{
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+}
+#paginacao a{
+    text-decoration: none;
+    color: #fff;
+}
+#paginacao a:hover{
+    text-decoration: none;
+    color: #ccc;
+}
+#content{
+    position: relative;
+    float: left;
+    margin: 5;
+}
+#areaLogin{
+    position: relative;
+    float: right;
+    width: 300px;
+    height: 500px;
+    margin: 10px 10px 30px 10px;
+
+}
+#areaLogin input{
+    margin-bottom: 10px;
+}
+#areaLogin fieldset{
+    height: 200px;
+    width: 260px;
+    margin-bottom: 20px;
+}
+#areaLogin fieldset form table{
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+}
+.link_novo {
+   color: #AAABAD;
+   font-size: 12px;
+   font-weight: bold;
+}
+.link_novo:hover {
+   color: #333;
+   font-size: 12px;
+   font-weight: bold;
+}
+#contato{
+    float: right;
+}
+#tudo{
+    padding: 1em 8px;
+}
+#areaAlterar{
+    position: relative;
+    float: right;
+    width: 307px;
+    height: 330px;
+    margin: 10px;
+}
+#areaAlterar input{
+    margin-bottom: 10px;
+}
+#areaAlterar fieldset{
+    height: 260px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+#areaAlterar fieldset form table{
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+}
+#areaLembrar{
+    position: relative;
+    float: right;
+    width: 307px;
+    height: 220px;
+    margin: 10px;
+}
+#areaLembrar input{
+    margin-bottom: 10px;
+}
+#areaLembrar fieldset{
+    height: 150px;
+    width: 275px;
+    margin-bottom: 20px;
+}
+#areaLembrar fieldset form table{
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+}
+.clear{
+    padding: 40;
+}
+
+.link_manual{
+   color: #F66401;
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.link_manual:hover {
+   color: #333;
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+/********************** @FONT FACE ***************************/
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('font/nexa_bold-webfont.eot');
+    src: url('font/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/nexa_bold-webfont.woff') format('woff'),
+         url('font/nexa_bold-webfont.ttf') format('truetype'),
+         url('font/nexa_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('font/nexa_light-webfont.eot');
+    src: url('font/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/nexa_light-webfont.woff') format('woff'),
+         url('font/nexa_light-webfont.ttf') format('truetype'),
+         url('font/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'signikaregular';
+    src: url('font/signika-regular-webfont.eot');
+    src: url('font/signika-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/signika-regular-webfont.woff') format('woff'),
+         url('font/signika-regular-webfont.ttf') format('truetype'),
+         url('font/signika-regular-webfont.svg#signikaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'signikalight';
+    src: url('font/signika-light-webfont.eot');
+    src: url('font/signika-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/signika-light-webfont.woff') format('woff'),
+         url('font/signika-light-webfont.ttf') format('truetype'),
+         url('font/signika-light-webfont.svg#signikalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'signika_negativeregular';
+    src: url('font/signikanegative-regular-webfont.eot');
+    src: url('font/signikanegative-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/signikanegative-regular-webfont.woff') format('woff'),
+         url('font/signikanegative-regular-webfont.ttf') format('truetype'),
+         url('font/signikanegative-regular-webfont.svg#signika_negativeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'signikabold';
+    src: url('font/signika-bold-webfont.eot');
+    src: url('font/signika-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/signika-bold-webfont.woff') format('woff'),
+         url('font/signika-bold-webfont.ttf') format('truetype'),
+         url('font/signika-bold-webfont.svg#signikabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.texto-justificado{
+    font-family: signikaregular;
+    width: 100%;
+    text-align: justify;
+}
+
+#contador_acesso{
+    width: 100%;
+    text-align: justify;
+}
+
+#table_contadoracesso{
+    margin: -54px 0px 0px 5px;
+    font-family: signikabold;
+    font-weight: bold;
+    font-size: 20px;
+    color: #F66401;
+    float: left;
+    width: 25%;
+}
+
+#table_topvagas{
+    margin: -65px 0px 0px 0px;
+    /*width: 500px;*/
+    float: left;
+}
+
+#titlo_vagas{
+    width: 100%;
+    color: #EE7228;
+    text-align: left;
+    border: none;
+    font-weight: bold;
+}
+
+.img_contadorEmpresa{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.img_contadorCurriculos{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.img_contadorVisita{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.titulo_index{
+    color: #EE7228;
+    font-family: nexa_lightregular;
+}
+
+.subtitulo_index{
+    color: #F66401;
+    font-size: 32px;
+    font-family: signikabold;
+}
+
+.subtitulo_TodasVagas{
+    color: #F66401;
+    font-size: 29px;
+    font-family: signikabold;
+    text-align: center;
+}
+
+.linha_subtitulo{
+    background-color: #9ED0CA;
+    border-color: #9ED0CA;
+    border-style: solid;
+}
+
+.btn_visualizar{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url('../../../Utilidades/Imagens/bancodeoportunidades/lupa.png') no-repeat center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn_imprimir{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url('../../../Utilidades/Imagens/bancodeoportunidades/imprimir.png') no-repeat center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn_historico{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url('../../../Utilidades/Imagens/bancodeoportunidades/historico.png') no-repeat center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.white_content_candidato{
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 75%;
+    height: 94%;
+    padding: 0 20px;
+    border: 5px solid #ee7228;
+    background-color: #fff;
+    z-index:1002;
+    overflow: auto;
+}
+
+.white_content_candidato_todos{
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 75%;
+    height: 94%;
+    padding: 0 20px;
+    border: 5px solid #ee7228;
+    background-color: #fff;
+    z-index:1002;
+    overflow: auto;
+}
+
+.white_content_candidato_baixa{
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 75%;
+    height: 94%;
+    padding: 0 20px;
+    border: 5px solid #ee7228;
+    background-color: #fff;
+    z-index:1002;
+    overflow: auto;
+}
+
+.white_content_candidato_pre{
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 75%;
+    height: 94%;
+    padding: 0 20px;
+    border: 5px solid #ee7228;
+    background-color: #fff;
+    z-index:1002;
+    overflow: auto;
+}
+
+.white_content_candidato_con{
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 75%;
+    height: 94%;
+    padding: 0 20px;
+    border: 5px solid #ee7228;
+    background-color: #fff;
+    z-index:1002;
+    overflow: auto;
+}
+
+.white_content_candidato_dis{
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 75%;
+    height: 94%;
+    padding: 0 20px;
+    border: 5px solid #ee7228;
+    background-color: #fff;
+    z-index:1002;
+    overflow: auto;
+}
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.black_overlay_todos{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.black_overlay_baixa{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.black_overlay_pre{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.black_overlay_con{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.black_overlay_dis{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.log_bottom{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.link_incluir {
+   color: #EE7228;
+   font-size: 12px;
+   font-weight: bold;
+   text-decoration: none;
+}
+.link_incluir:hover {
+   color: #FF8F4C;
+}
+
+.selecionados{
+    background-color: #fff;
+}
+
+.PerguntaFaq{
+    margin-left: 20px;
+}
+.RespostaFaq{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.botao_lista{
+    /*margin-bottom: -46px;*/
+    /*margin-left: 610px;*/
+    float: right;
+    margin-bottom: 5px;
+}
+
+.tabela_encaminhados{
+    float: right;
+}
+
+.imprimir{
+    position: relative;
+    margin: 5 20;
+}
+
+.botoes_imprimir{
+    margin: 5px 20px;
+}
+
+.div_manual{
+    font-family: signikaregular;
+}
+
+.linhaTodasVagas{
+    background: #FFF;
+}
+
+.linhaTodasVagas:hover{
+    background: #F5DEB3;
+    font-weight: bold;
+    cursor: default;
+}
+
+.cont_pagina{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px 0px 0px 5px;
+}
+
+.msg_login_empresa{
+    padding: 5px;
+    color: #006600;
+    font-weight: bold;
+    background-color: #99ff99;
+    border-color: #006600;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.tabela_vagas{
+    border: 1px solid #EE7228;
+    border-collapse: collapse;
+}
+
+.tabela_vagas td{
+    padding: 6px;
+}
+
+.tabela_vagas_cab{
+    background-color: #EE7228;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tabela_vagas_row{
+    background-color: #fff;
+    color: #666;
+    font-size: 12px;
+}
+
+.tabela_vagas_row:hover{
+    background: #698B69;
+    cursor: default;
+    color: #FFF;
+}
+
+.tabela_vagas_row a:link{
+    text-decoration: none;
+    color: #000;
+}
+
+.tabela_vagas_row a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+.tabela_vagas_row a:hover{
+    text-decoration: underline;
+    color: #FFF;
+}
+
+#paginacaoVagas{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #EE7228;
+    text-align: center;
+}
+
+#paginacaoVagas a:link{
+    text-decoration: none;
+    color: #000;
+}
+
+#paginacaoVagas a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+#paginacaoVagas a:hover{
+    text-decoration: underline;
+    color: #EE7228;
+}
+
+.ajudaCadVaga{
+    float: right;
+}
+
+.ajudaCadVaga:hover{
+    color: #EE7228;
+}
+
+.filtro_todos a:link{
+    text-decoration: none;
+    color: #000;
+}
+
+.filtro_todos a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+.filtro_todos a:hover{
+    text-decoration: underline;
+    color: #EE7228;
+}
+
+.tabela_linha_todos{
+    background-color: #fff;
+    color: #666;
+    font-size: 12px;
+}
+
+.tabela_linha_todos:hover{
+    background: #E4E2CD;
+    cursor: default;
+    color: #000;
+}
+
+.tabela_contratar {
+    border-collapse: collapse;
+    border: 1px solid #ee7228;
+}
+
+.tabela_contratar td {
+    border: 1px solid #ee7228;
+    padding: 8px;
+}
+
+.msg_vaga_ja_cadastrada{
+    padding: 5px;
+    color: #8B0000;
+    font-weight: bold;
+    background-color: #FFF68F;
+    border-color: #8B0000;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.div_aviso_profissoes{
+    border: solid 2px #607B8B;
+    background-color: #4682B4;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 11.5px;
+    padding: 5px;
+    border-radius: 5px;
+    word-spacing: 2px;
+}
+
+.profissao_lista{
+    float: left;
+    width: 214px;
+    height: 58px;
+    margin: 2px;
+    border: outset 1px #00C444;
+    background-color: #00C444;
+    color: #FFF;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.profissao_lista:hover {
+    border: inset 1px #00EE00;
+    background-color: #00EE00;
+    color: #FFF;
+    cursor: default;
+}
+
+.profissao_lista_validacao{
+    float: left;
+    width: 214px;
+    height: 58px;
+    margin: 2px;
+    border: outset 1px #CDCD00;
+    background-color: #EEEE00;
+    color: #8B7500;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.profissao_lista_validacao:hover {
+    border: inset 1px #CDCD00;
+    background-color: #CDCD00;
+    color: #FFF;
+    cursor: default;
+}
+
+.div_nenhuma_profissao{
+    margin-top: 90px;
+    margin-bottom: -8px;
+    border: solid 2px #32CD32;
+    background-color: #d0efa0;
+    color: #006400;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.label_nova_profissao{
+    float: right;
+    color: #000;
+    font-size: 13px;
+}
+
+.profissao_outra{
+    float: right;
+    color: #000;
+    font-size: 13px;
+}
+#ds_outro{
+    border: solid 2px #EE7228;
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: -4px;
+}
+
+.clique_nova_profissao{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.clique_nova_profissao:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.conta_lista_profissoes{
+    float: left;
+    color: #000;
+    font-size: 13px;
+}
+
+.div_conta_vagas_profissao{
+    float: left;
+    border-radius: 3px;
+    color: #00C444;
+    background: #FFF;
+    padding: 2px;
+    width: 30px;
+    margin-right: -30px;
+}
+
+.versao_rodape{
+    font-size: x-small;
+    padding: 7px;
+    text-align: center;
+}
+
+.div-icones-index {
+    float: left;
+    width: 20%;
+    color: #EE7228;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.div-numero-index {
+    font-size: 30px;
+}
+
+.vagas-index {
+    width: 64%;
+    clear: left;
+    background-color: #EE7228;
+    padding: 10px;
+    border-radius: 5px;
+    height: 240px;
+    margin-top: 140px;
+}
+
+.vagas-index a {
+    text-decoration: none;
+}
+
+.label-vagas-destaque {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    padding-top: 8px;
+    padding-left: 35px;
+}
+
+.vagas {
+    background-color: #FFF;
+    height: 195px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.top_vagas{
+    font-family: signika_negativeregular;
+    color: white;
+    font-size: 12px;
+    width: 267px;
+    background-color: #F66401;
+    margin: 0px 0px 0px 11px;
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.top-vagas {
+    color: #EE7228;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: default;
+    height: 145px;
+    overflow: hidden;
+}
+
+.ultima-vaga {
+    background-color: #9ED0CA;
+    padding: 10px;
+    color: #FFF;
+    font-size: 13.5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 1px 5px 0px 5px;
+    cursor: default;
+}
+
+.ver-mais {
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+.ver-mais a{
+    color: #EE7228;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.ver-mais a:hover {
+    color: #9ED0CA;
+}
+
+.ver-mais img {
+    float: right;
+    margin-top: -8px;
+}
+
+.painel-vaga {
+    padding: 5px;
+    background-color: #F1F1E6;
+    border: 1px solid #FFF;
+}
+
+.mais-vagas-img {
+    float: left;
+}
